@@ -1,0 +1,61 @@
+MainWindow {
+    background-color: #121212;  /* Основной темный фон */
+    color: #E0E0E0;  /* Светлый текст */
+}
+
+QDialog {
+    background-color: #121212;  /* Основной темный фон */
+    color: #E0E0E0;  /* Светлый текст */
+}
+
+QToolBar {
+    background-color: #1E1E1E;  /* Темнее основного фона */
+    border: 1px solid #2C2C2C;
+    color: #E0E0E0;
+}
+
+ResetButton { 
+    background-color: #2C2C2C;  /* Темный фон кнопки */
+    border-radius: 10px;  
+    border: 1px solid #3E3E3E;  
+    padding: 5px 10px;  
+    outline: 0px;
+    color: #E0E0E0;
+}
+
+ResetButton:hover {  
+    background-color: #3A3A3A;  /* Чуть светлее при наведении */
+    border: 1px solid #4A4A4A;
+}
+
+btn { 
+    padding: 1px 1px; 
+    background-color: #1E1E1E;  /* Темный фон */
+    border-radius: 8px;  
+    border: 1px solid #2C2C2C;  
+    outline: 0px;
+    color: #E0E0E0;
+}
+
+btn:hover {  
+    background-color: #2C2C2C;  /* Чуть светлее при наведении */
+    border: 1px solid #3E3E3E;
+}
+
+btn:disabled {  
+    background-color: #161616;  /* Еще темнее для disabled */
+    color: #666666;
+}
+
+QLCDNumber {
+    background-color: #1E1E1E;
+    color: #4CAF50;  /* Зеленый цвет цифр */
+    border: 1px solid #2C2C2C;
+    border-radius: 5px;    
+}
+
+QLCDNumber::indicator {
+    background-color: #2C2C2C;
+    color: #4CAF50;  /* Зеленый цвет цифр */
+    border-radius: 5px;  
+}

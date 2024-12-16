@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DatabaseEditor</class>
+ <widget class="QDialog" name="DatabaseEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QDialog {
+        background-color: #121212;
+        color: #E0E0E0;
+    }
+    QPushButton {
+        background-color: #1E1E1E;
+        color: #E0E0E0;
+        border: 1px solid #333;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    QPushButton:hover {
+        background-color: #2E2E2E;
+    }
+    QPushButton:pressed {
+        background-color: #3E3E3E;
+    }
+    QTableWidget {
+        background-color: #1E1E1E; 
+        color: #E0E0E0;
+        border: 1px solid #333;
+    }
+    QTableWidget::item {
+        background-color: #1E1E1E; 
+        color: #E0E0E0;  
+        border: 1px solid #333;
+    }
+    QTableWidget::item:selected {
+        background-color: #2E2E2E;  
+        color: #FFFFFF;  
+    }
+    QTableWidget::header {
+        background-color: #121212; 
+        color: #E0E0E0; 
+        border: 1px solid #333;
+    }
+    QTableWidget::header::section {
+        background-color: #121212; 
+        color: #E0E0E0; 
+        border: 1px solid #333;
+    }
+    QScrollBar:vertical {
+        background-color: #1E1E1E;
+        width: 15px;
+        margin: 15px 0 15px 0;
+        border: 1px solid #333;
+    }
+    QScrollBar::handle:vertical {
+        background-color: #333;
+        min-height: 20px;
+    }
+    QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+        background-color: #1E1E1E;
+        height: 15px;
+        subcontrol-origin: margin;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Дата</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Результат</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Бомбы</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Строки</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Столбцы</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="updateButton">
+     <property name="text">
+      <string>Обновить</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="deleteButton">
+     <property name="text">
+      <string>Удалить выбранную игру</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+</ui>
